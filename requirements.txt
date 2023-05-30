@@ -2,4 +2,3 @@ flask
 tensorflow
 opencv-python
 numpy
-os
