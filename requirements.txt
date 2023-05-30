@@ -1,0 +1,5 @@
+flask
+tensorflow
+cv2
+numpy
+os
