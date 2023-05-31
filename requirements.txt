@@ -3,5 +3,6 @@ tensorflow
 opencv-python
 numpy
 flask-limiter
-Werkzeug
+werkzeug
 gunicorn
+protobuf==3.20.*
