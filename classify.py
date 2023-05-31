@@ -67,6 +67,7 @@ def classify_image(uploaded_image):
     image = cv2.imread("./uploads/" + uploaded_image)
     image = cv2.resize(image, (100, 100))
     image = np.expand_dims(image, axis=0)
+    global model
     probabilities = model.predict(image)[0]
     predicted_class_indices = np.argsort(probabilities)[::-1]
     predicted_classes_prob = {}
