@@ -3,3 +3,4 @@ tensorflow
 opencv-python
 numpy
 gunicorn
+flask-limiter
