@@ -1,6 +1,6 @@
 flask
 tensorflow
-opencv-python
+pillow
 numpy
 flask-limiter
 werkzeug
