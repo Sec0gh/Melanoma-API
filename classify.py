@@ -1,4 +1,4 @@
-from PIL import Image
+import cv2
 import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPool2D
@@ -64,8 +64,8 @@ model.load_weights('modelv7.h5')
 
 
 def classify_image(uploaded_image):
-    image = Image.open("./uploads/" + uploaded_image)
-    image = image.resize((100, 100))
+    image = cv2.imread("./uploads/" + uploaded_image)
+    image = cv2.resize(image, (100, 100))
     image = np.expand_dims(image, axis=0)
     global model
     probabilities = model.predict(image)[0]
