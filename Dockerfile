@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install -y \
     libffi-dev \   
     libopenblas-dev \
     liblapack-dev \
+    gfortran \
     libboost-all-dev   
  && rm -rf /var/lib/apt/lists/*    
 
