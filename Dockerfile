@@ -24,7 +24,6 @@ RUN apt-get install -y \
         libx264-dev \            
         libffi-dev \
 
-RUN apt-get install -y libopenblas-dev     
 RUN apt-get install -y liblapack-dev       
 RUN apt-get install -y gfortran  
 RUN apt-get install -y libboost-all-dev
