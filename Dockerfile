@@ -5,7 +5,7 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     curl \
     && rm -rf /var/lib/apt/lists/*
-RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+RUN wget https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 RUN echo "deb http://packages.cloud.google.com/apt coral-edgetpu-stable main" | tee /etc/apt/sources.list.d/coral-edgetpu.list
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
