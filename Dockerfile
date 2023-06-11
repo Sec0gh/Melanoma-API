@@ -6,8 +6,8 @@ RUN apt-get update \
         apt-transport-https \
         software-properties-common
         
-RUN add-apt-repository ppa:libpng/ppa   
-RUN add-apt-repository ppa:gisig/libjasper
+RUN add-apt-repository ppa:libpng/ppa  -y
+RUN add-apt-repository ppa:gisig/libjasper  -y
 
 RUN apt-get update   
 RUN apt-get install -y \     
