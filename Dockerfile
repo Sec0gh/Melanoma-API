@@ -27,7 +27,7 @@ RUN apt-get update && \
 # Add NVIDIA package repository
 RUN wget -O /etc/apt/trusted.gpg.d/nvidia-cuda.gpg https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
 RUN echo "deb https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu2004/x86_64 /" >> /etc/apt/sources.list.d/nvidia-machine-learning.list
-RUN apt-get update
+
 
 # Setup TensorRT and CUDA
 RUN wget https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu2004/x86_64/libnvinfer7_7.2.3-1+cuda11.4_amd64.deb
