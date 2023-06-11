@@ -15,16 +15,16 @@ RUN apt-get install -y \
         libglib2.0-0   \     
         build-essential \ 
         zlib1g-dev \   
-        libjpeg-dev          
-        libtiff5-dev          
-        libpng-dev              
-        libavcodec-dev           
-        libavformat-dev         
-        libswscale-dev       
-        libv4l-dev       
-        libxvidcore-dev           
-        libx264-dev             
-        libffi-dev
+        libjpeg-dev \         
+        libtiff5-dev \         
+        libpng-dev \             
+        libavcodec-dev  \         
+        libavformat-dev \        
+        libswscale-dev \      
+        libv4l-dev \      
+        libxvidcore-dev \          
+        libx264-dev \            
+        libffi-dev \
 
 RUN apt-get install -y libopenblas-dev     
 RUN apt-get install -y liblapack-dev       
