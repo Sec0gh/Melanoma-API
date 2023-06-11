@@ -7,22 +7,22 @@ RUN apt-get update \
         software-properties-common
         
 
-RUN apt-get update   
-RUN apt-get install -y \     
+RUN apt-get update && \
+    apt-get install -y \
         libgl1-mesa-glx \
-        libglib2.0-0   \     
-        build-essential \ 
-        zlib1g-dev \   
-        libjpeg-dev \         
-        libtiff5-dev \         
-        libpng-dev \             
-        libavcodec-dev  \         
-        libavformat-dev \        
-        libswscale-dev \      
-        libv4l-dev \      
-        libxvidcore-dev \          
-        libx264-dev \            
-        libffi-dev \
+        libglib2.0-0 \
+        build-essential \
+        zlib1g-dev \
+        libjpeg-dev \
+        libtiff5-dev \
+        libpng-dev \
+        libavcodec-dev \
+        libavformat-dev \
+        libswscale-dev \
+        libv4l-dev \
+        libxvidcore-dev \
+        libx264-dev \
+        libffi-dev
 
 RUN rm -rf /var/lib/apt/lists/*
 
