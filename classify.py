@@ -60,7 +60,7 @@ model.add(Dropout(0.5))
               
 # [+] 8th output layer
 model.add(Dense(7, activation = 'softmax'))
-model.load_weights('modelv7.h5')
+model.load_weights('./modelv7.h5')
 
 
 def classify_image(uploaded_image):
