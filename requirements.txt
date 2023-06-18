@@ -5,3 +5,4 @@ numpy
 flask-limiter
 werkzeug===1.0.1
 gunicorn
+markupsafe==1.1.1
